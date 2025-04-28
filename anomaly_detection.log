@@ -1,0 +1,476 @@
+2025-04-18 12:18:41,414 - __main__ - INFO - Training new login models
+2025-04-18 12:18:41,415 - __main__ - INFO - Training initial login models
+2025-04-18 12:18:42,308 - __main__ - INFO - Initial login models trained and saved successfully
+2025-04-18 12:18:42,310 - __main__ - INFO - Creating new online login model
+2025-04-18 12:18:42,312 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 3.467740765592722, 'cursor_movements': 168, 'session_duration': 34, 'keystroke_timings': [222, 224, 225, 247, 241, 247, 280, 248, 240, 520, 184, 4305, 256, 288, 199, 216, 616, 289, 232, 607, 289, 3200, 176, 312, 192, 312, 215, 201, 544, 320, 409, 863, 264, 432, 344], 'key_press_count': 35, 'latitude': 13.0476, 'longitude': 80.2768, 'login_time_of_day': 'afternoon', 'timestamp': '2025-04-18T06:48:18.659Z'}
+2025-04-18 12:18:42,353 - __main__ - INFO - Static model predictions - RF: 1.0 (0.790), XGB: 1 (0.995), Ensemble: 1 (0.872)
+2025-04-18 12:18:42,354 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-18 12:18:43,169 - __main__ - INFO - Saving online login model
+2025-04-18 12:18:43,539 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6105220627069473}
+2025-04-18 12:34:15,319 - __main__ - INFO - Loading existing login models
+2025-04-18 12:34:15,590 - __main__ - INFO - Loading existing online login model
+2025-04-18 12:34:16,047 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 1.8355812414376207, 'cursor_movements': 225, 'session_duration': 50, 'keystroke_timings': [208, 215, 200, 200, 217, 223, 224, 224, 200, 536, 577, 1792, 632, 1079, 1217, 1199, 1113, 1167, 1121, 1200, 1160, 1119, 1048, 1138, 7327, 536, 560, 552, 552, 544, 586, 574, 528, 530, 2855, 996, 971, 1464, 977, 1464, 2359, 1472, 960, 1104, 906, 863], 'key_press_count': 46, 'latitude': 13.0476, 'longitude': 80.2768, 'login_time_of_day': 'afternoon', 'timestamp': '2025-04-18T07:04:06.203Z'}
+2025-04-18 12:34:16,093 - __main__ - INFO - Static model predictions - RF: 1.0 (0.790), XGB: 1 (0.995), Ensemble: 1 (0.872)
+2025-04-18 12:34:16,094 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-18 12:34:16,096 - __main__ - INFO - Saving online login model
+2025-04-18 12:34:16,577 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6105220627069473}
+2025-04-18 12:41:40,668 - __main__ - INFO - Loading existing login models
+2025-04-18 12:41:40,792 - __main__ - INFO - Loading existing online login model
+2025-04-18 12:41:41,202 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '0bd0c6a8-ed39-4493-9b24-b09105d5e74f', 'account_id': '210987654321', 'typing_speed': 4.094299314307908, 'cursor_movements': 119, 'session_duration': 19, 'keystroke_timings': [176, 336, 207, 304, 288, 272, 234, 238, 240, 225, 208, 3464, 183, 441, 192, 391, 281, 151, 747, 141, 754, 135, 287, 443, 109, 2145, 1648, 192, 288, 208, 233, 216, 247, 160, 177], 'key_press_count': 35, 'latitude': 13.0476, 'longitude': 80.2768, 'login_time_of_day': 'afternoon', 'timestamp': '2025-04-18T07:11:31.667Z'}
+2025-04-18 12:41:41,252 - __main__ - INFO - Static model predictions - RF: 1.0 (0.810), XGB: 1 (0.995), Ensemble: 1 (0.884)
+2025-04-18 12:41:41,254 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-18 12:41:41,258 - __main__ - INFO - Saving online login model
+2025-04-18 12:41:41,876 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6189220627069473}
+2025-04-18 13:09:35,336 - __main__ - INFO - Loading existing login models
+2025-04-18 13:09:35,538 - __main__ - INFO - Loading existing online login model
+2025-04-18 13:09:35,851 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '0bd0c6a8-ed39-4493-9b24-b09105d5e74f', 'account_id': '210987654321', 'typing_speed': 17.54229740374047, 'cursor_movements': 560, 'session_duration': 112, 'keystroke_timings': [171, 561, 255, 272, 232, 248, 224, 256, 296, 176, 200, 6545, 247, 312, 176, 456, 224, 152, 208, 162, 390, 1833, 319, 216, 217, 271, 169, 231, 257, 216, 191, 11073, 3176, 432, 352, 424, 272, 184, 376, 185, 120, 127, 153, 87, 576, 488, 97, 79, 121, 48, 63, 89, 32, 41, 94, 26, 55, 103, 56, 80, 64, 152, 88, 27, 78, 112, 95, 96, 25, 40, 87, 25, 56, 87, 28, 44, 89, 23, 73, 79, 29, 46, 741, 88, 64, 104, 57, 41, 86, 26, 79, 3528, 3191, 4857, 1465, 1431, 1449, 1767, 1416, 3848, 688, 680, 696, 648, 400, 217, 215, 168, 218, 222, 200, 192, 232, 208, 185, 415, 216, 240, 168, 208, 216, 184, 216, 216, 216, 192, 408, 224, 224, 176, 200, 208, 192, 200, 216, 208, 184, 1304, 502, 42, 35, 32, 30, 33, 31, 29, 45, 33, 30, 31, 29, 31, 37, 39, 40, 25, 28, 31, 38, 25, 45, 31, 31, 31, 30, 32, 35, 45, 32, 27, 37, 24, 38, 25, 43, 32, 37, 24, 35, 26, 37, 41, 37, 25, 35, 27, 37, 28, 40, 32, 38, 27, 35, 29, 40, 31, 41, 25, 26, 38, 25, 35, 40, 31, 35, 27, 36, 26, 45, 31, 39, 26, 36, 27, 27, 45, 34, 30, 38, 24, 30, 32, 30, 46, 36, 26, 44, 26, 25, 28, 45, 40, 28, 35, 25, 28, 38, 44, 27, 35, 26, 340, 176, 10897, 224, 183, 185, 224, 864, 26, 190, 200, 464, 240, 136, 192, 232, 936, 501, 47, 31, 36, 27, 31, 30, 36, 40, 237, 168, 120, 120], 'key_press_count': 271, 'latitude': 12.987875963653124, 'longitude': 80.18700376219428, 'login_time_of_day': 'afternoon', 'timestamp': '2025-04-18T07:39:26.326Z'}
+2025-04-18 13:09:35,907 - __main__ - INFO - Static model predictions - RF: 1.0 (0.800), XGB: 1 (0.995), Ensemble: 1 (0.878)
+2025-04-18 13:09:35,908 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-18 13:09:35,911 - __main__ - INFO - Saving online login model
+2025-04-18 13:09:36,360 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6147220627069473}
+2025-04-18 18:23:24,421 - __main__ - INFO - Loading existing login models
+2025-04-18 18:23:24,534 - __main__ - INFO - Loading existing online login model
+2025-04-18 18:23:24,861 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 4.074591126377515, 'cursor_movements': 204, 'session_duration': 30, 'keystroke_timings': [185, 192, 191, 257, 208, 209, 263, 328, 232, 631, 169, 10977, 239, 337, 175, 176, 377, 255, 240, 528, 161, 1927, 169, 287, 120, 488, 329, 175, 209, 167, 1074, 359, 184], 'key_press_count': 33, 'latitude': 12.987887549059526, 'longitude': 80.18700272664458, 'login_time_of_day': 'evening', 'timestamp': '2025-04-18T12:53:15.320Z'}
+2025-04-18 18:23:24,900 - __main__ - INFO - Static model predictions - RF: 1.0 (0.790), XGB: 1 (0.995), Ensemble: 1 (0.872)
+2025-04-18 18:23:24,901 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-18 18:23:24,902 - __main__ - INFO - Saving online login model
+2025-04-18 18:23:25,248 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6105220627069473}
+2025-04-18 18:56:11,254 - __main__ - INFO - Loading existing login models
+2025-04-18 18:56:11,548 - __main__ - INFO - Loading existing online login model
+2025-04-18 18:56:11,911 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 3.776850019493652, 'cursor_movements': 157, 'session_duration': 23, 'keystroke_timings': [200, 200, 224, 240, 223, 241, 240, 240, 208, 527, 161, 4585, 295, 327, 177, 176, 280, 280, 240, 336, 271, 1529, 208, 292, 308, 264, 320, 200, 273, 255, 232, 392, 208, 2072, 216, 232, 176, 360, 336, 216, 304, 200, 416, 480, 256], 'key_press_count': 45, 'latitude': 12.987873944293579, 'longitude': 80.18700323477255, 'login_time_of_day': 'evening', 'timestamp': '2025-04-18T13:26:03.894Z'}
+2025-04-18 18:56:11,960 - __main__ - INFO - Static model predictions - RF: 1.0 (0.790), XGB: 1 (0.995), Ensemble: 1 (0.872)
+2025-04-18 18:56:11,961 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-18 18:56:11,979 - __main__ - INFO - Saving online login model
+2025-04-18 18:56:12,421 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6105220627069473}
+2025-04-18 19:02:40,204 - __main__ - INFO - Loading existing login models
+2025-04-18 19:02:40,409 - __main__ - INFO - Loading existing online login model
+2025-04-18 19:02:40,754 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 8.028395537322352, 'cursor_movements': 1327, 'session_duration': 81, 'keystroke_timings': [178, 191, 200, 248, 208, 192, 320, 241, 543, 233, 207, 5457, 360, 455, 161, 168, 424, 215, 201, 375, 393, 2096, 240, 207, 169, 408, 544, 480, 432, 321, 479, 328, 160, 44417, 1856, 424, 400, 608, 553, 575, 217, 207, 96, 113, 55, 64, 104, 80, 24, 73, 25, 39, 87, 36, 37, 95, 27, 45, 9539], 'key_press_count': 59, 'latitude': 12.987868262905101, 'longitude': 80.18700656327316, 'login_time_of_day': 'evening', 'timestamp': '2025-04-18T13:32:32.285Z'}
+2025-04-18 19:02:40,799 - __main__ - INFO - Static model predictions - RF: 1.0 (0.790), XGB: 1 (0.995), Ensemble: 1 (0.872)
+2025-04-18 19:02:40,800 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-18 19:02:40,801 - __main__ - INFO - Saving online login model
+2025-04-18 19:02:41,221 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6105220627069473}
+2025-04-18 19:43:17,952 - __main__ - INFO - Loading existing login models
+2025-04-18 19:43:18,175 - __main__ - INFO - Loading existing online login model
+2025-04-18 19:43:18,668 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': 'c9f10cf0-04ec-4740-9925-bcebac33a92e', 'account_id': '312465978132', 'typing_speed': 4.252260467996577, 'cursor_movements': 336, 'session_duration': 32, 'keystroke_timings': [394, 7295, 456, 1960, 335, 216, 232, 160, 216, 129, 144, 249, 367, 111, 194], 'key_press_count': 15, 'latitude': 12.98787516439514, 'longitude': 80.18700946777602, 'login_time_of_day': 'evening', 'timestamp': '2025-04-18T14:13:03.499Z'}
+2025-04-18 19:43:18,730 - __main__ - INFO - Static model predictions - RF: 1.0 (0.790), XGB: 1 (0.995), Ensemble: 1 (0.872)
+2025-04-18 19:43:18,731 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-18 19:43:18,733 - __main__ - INFO - Saving online login model
+2025-04-18 19:43:19,659 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6105220627069473}
+2025-04-19 18:34:53,049 - __main__ - INFO - Loading existing login models
+2025-04-19 18:34:53,344 - __main__ - INFO - Loading existing online login model
+2025-04-19 18:34:53,833 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 5.727182182670464, 'cursor_movements': 1191, 'session_duration': 97, 'keystroke_timings': [204, 197, 224, 232, 217, 245, 387, 216, 205, 282, 273, 7026, 256, 299, 151, 159, 214, 505, 204, 475, 230, 2654, 218, 189, 122, 262, 226, 163, 223, 299, 10313, 220, 187, 3256, 52, 123, 231, 88, 87, 213, 77, 93, 229, 92, 92, 646, 127, 115, 219, 128, 111, 219, 126, 127, 209, 132, 118, 230, 132, 123, 197, 129, 136, 212, 139, 136, 200, 141, 135, 739, 205, 220, 134, 266, 156, 143, 201, 181, 362, 263, 144, 1350, 97, 229, 107, 535, 103, 201, 132, 474, 114, 208, 129, 401, 111, 213, 125, 462, 130, 210, 132, 439, 121, 206, 133, 370, 125, 208, 129, 398, 130, 215, 120, 1067, 213, 220, 181, 773, 180, 190, 188, 191, 459, 227, 185, 815, 154, 145, 147, 135, 139, 141, 136, 133, 143, 144, 129, 125], 'key_press_count': 138, 'latitude': 12.987882304135837, 'longitude': 80.18700799677883, 'login_time_of_day': 'evening', 'timestamp': '2025-04-19T13:04:37.951Z'}
+2025-04-19 18:34:53,923 - __main__ - INFO - Static model predictions - RF: 1.0 (0.790), XGB: 1 (0.995), Ensemble: 1 (0.872)
+2025-04-19 18:34:53,925 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-19 18:34:53,929 - __main__ - INFO - Saving online login model
+2025-04-19 18:34:54,853 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6105220627069473}
+2025-04-20 19:04:03,357 - __main__ - INFO - Loading existing login models
+2025-04-20 19:04:03,501 - __main__ - INFO - Loading existing online login model
+2025-04-20 19:04:03,871 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 3.90654667839411, 'cursor_movements': 410, 'session_duration': 51, 'keystroke_timings': [214, 249, 207, 760, 216, 256, 216, 303, 249, 304, 233, 3360, 263, 360, 160, 176, 296, 259, 221, 409, 223, 33578, 183, 249, 135, 320, 160, 224, 408, 224, 440, 584, 384, 480, 144, 144], 'key_press_count': 36, 'latitude': 12.98787923864327, 'longitude': 80.18700660895033, 'login_time_of_day': 'evening', 'timestamp': '2025-04-20T13:33:55.493Z'}
+2025-04-20 19:04:03,906 - __main__ - INFO - Static model predictions - RF: 1.0 (0.790), XGB: 1 (0.995), Ensemble: 1 (0.872)
+2025-04-20 19:04:03,907 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-20 19:04:03,908 - __main__ - INFO - Saving online login model
+2025-04-20 19:04:04,408 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6105220627069473}
+2025-04-21 16:48:35,807 - __main__ - INFO - Loading existing login models
+2025-04-21 16:48:35,948 - __main__ - INFO - Loading existing online login model
+2025-04-21 16:48:36,256 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 3.4595806132586575, 'cursor_movements': 254, 'session_duration': 68, 'keystroke_timings': [213, 208, 224, 272, 224, 217, 199, 235, 214, 599, 224, 10777, 239, 2329, 399, 441, 2936, 1663, 1105, 1592, 1024, 3321, 146, 2254, 4199, 176, 144, 137, 607, 160, 265, 149, 363, 183, 144, 296, 345, 231, 296, 544, 144, 440, 424, 176, 640], 'key_press_count': 45, 'latitude': 12.987981694470472, 'longitude': 80.18698242021318, 'login_time_of_day': 'afternoon', 'timestamp': '2025-04-21T11:18:27.645Z'}
+2025-04-21 16:48:36,294 - __main__ - INFO - Static model predictions - RF: 1.0 (0.790), XGB: 1 (0.995), Ensemble: 1 (0.872)
+2025-04-21 16:48:36,297 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-21 16:48:36,299 - __main__ - INFO - Saving online login model
+2025-04-21 16:48:36,814 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6105220627069473}
+2025-04-21 17:55:46,469 - __main__ - INFO - Loading existing login models
+2025-04-21 17:55:46,667 - __main__ - INFO - Loading existing online login model
+2025-04-21 17:55:46,980 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 3.9623388535243937, 'cursor_movements': 87, 'session_duration': 21, 'keystroke_timings': [243, 223, 215, 225, 224, 240, 232, 224, 816, 185, 191, 1680, 217, 318, 177, 168, 208, 247, 232, 313, 160, 2400, 184, 295, 161, 328, 240, 255, 264, 313, 521, 510, 240, 280], 'key_press_count': 34, 'latitude': 12.987883955314558, 'longitude': 80.18700379829346, 'login_time_of_day': 'evening', 'timestamp': '2025-04-21T12:25:38.404Z'}
+2025-04-21 17:55:47,023 - __main__ - INFO - Static model predictions - RF: 1.0 (0.720), XGB: 1 (0.995), Ensemble: 1 (0.830)
+2025-04-21 17:55:47,023 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-21 17:55:47,025 - __main__ - INFO - Saving online login model
+2025-04-21 17:55:47,442 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.5811220627069472}
+2025-04-22 09:32:29,222 - __main__ - INFO - Loading existing login models
+2025-04-22 09:32:29,610 - __main__ - INFO - Loading existing online login model
+2025-04-22 09:32:30,067 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 3.843988350837456, 'cursor_movements': 687, 'session_duration': 47332, 'keystroke_timings': [198, 725, 580, 197, 179, 211, 242, 233, 198, 106, 156, 2969, 212, 365, 152, 175, 266, 217, 199, 281, 268, 2316, 376, 351, 337, 373, 243, 422, 232, 287, 434, 453, 198, 617], 'key_press_count': 34, 'latitude': 12.987870906867247, 'longitude': 80.18701608324014, 'login_time_of_day': 'morning', 'timestamp': '2025-04-22T04:02:14.247Z'}
+2025-04-22 09:32:30,128 - __main__ - INFO - Static model predictions - RF: 1.0 (1.000), XGB: 1 (0.995), Ensemble: 1 (0.998)
+2025-04-22 09:32:30,129 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-22 09:32:30,131 - __main__ - INFO - Saving online login model
+2025-04-22 09:32:30,663 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6987220627069473}
+2025-04-22 09:34:45,594 - __main__ - INFO - Loading existing login models
+2025-04-22 09:34:45,843 - __main__ - INFO - Loading existing online login model
+2025-04-22 09:34:46,369 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 4.3700589295970405, 'cursor_movements': 63, 'session_duration': 23, 'keystroke_timings': [214, 182, 189, 225, 217, 221, 199, 229, 196, 470, 197, 3556, 255, 300, 160, 147, 184, 204, 188, 654, 126, 1797, 206, 190, 141, 209, 229, 225, 161, 279, 355, 405, 224, 813], 'key_press_count': 34, 'latitude': 12.876175769447963, 'longitude': 80.08350846293696, 'login_time_of_day': 'morning', 'timestamp': '2025-04-22T04:04:33.160Z'}
+2025-04-22 09:34:46,431 - __main__ - INFO - Static model predictions - RF: 1.0 (0.960), XGB: 1 (0.995), Ensemble: 1 (0.974)
+2025-04-22 09:34:46,433 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-22 09:34:46,435 - __main__ - INFO - Saving online login model
+2025-04-22 09:34:46,983 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6819220627069472}
+2025-04-22 09:37:24,065 - __main__ - INFO - Loading existing login models
+2025-04-22 09:37:24,295 - __main__ - INFO - Loading existing online login model
+2025-04-22 09:37:24,774 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 4.6945478211720015, 'cursor_movements': 102, 'session_duration': 31, 'keystroke_timings': [194, 153, 146, 283, 259, 190, 293, 173, 132, 145, 152, 8240, 150, 269, 145, 127, 216, 259, 198, 344, 244, 2043, 283, 213, 121, 253, 177, 194, 190, 292, 794, 492, 137, 751], 'key_press_count': 34, 'latitude': 12.876196657452082, 'longitude': 80.08354968926297, 'login_time_of_day': 'morning', 'timestamp': '2025-04-22T04:07:11.062Z'}
+2025-04-22 09:37:24,834 - __main__ - INFO - Static model predictions - RF: 1.0 (0.960), XGB: 1 (0.995), Ensemble: 1 (0.974)
+2025-04-22 09:37:24,835 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-22 09:37:24,837 - __main__ - INFO - Saving online login model
+2025-04-22 09:37:25,348 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6819220627069472}
+2025-04-22 09:59:40,401 - __main__ - INFO - Loading existing login models
+2025-04-22 09:59:40,587 - __main__ - INFO - Loading existing online login model
+2025-04-22 09:59:41,106 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 19.874794828704232, 'cursor_movements': 133, 'session_duration': 20, 'keystroke_timings': [368, 7698, 280, 8275, 519, 34, 31, 34, 33, 33, 13, 704], 'key_press_count': 12, 'latitude': 12.876187528437008, 'longitude': 80.08351869602565, 'login_time_of_day': 'morning', 'timestamp': '2025-04-22T04:29:23.729Z'}
+2025-04-22 09:59:41,171 - __main__ - INFO - Static model predictions - RF: 1.0 (0.980), XGB: 1 (0.995), Ensemble: 1 (0.986)
+2025-04-22 09:59:41,172 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-22 09:59:41,175 - __main__ - INFO - Saving online login model
+2025-04-22 09:59:42,118 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6903220627069473}
+2025-04-22 10:06:54,843 - __main__ - INFO - Loading existing login models
+2025-04-22 10:06:55,506 - __main__ - INFO - Loading existing online login model
+2025-04-22 10:06:55,985 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 5.406186976823414, 'cursor_movements': 52, 'session_duration': 17, 'keystroke_timings': [186, 911, 117, 523, 173, 163, 172, 157, 150, 162, 126, 116, 170, 741, 135, 2916, 163, 208, 126, 128, 164, 260, 205, 242, 179, 2899, 153, 201, 104, 257, 164, 162, 154, 127, 539, 373, 146], 'key_press_count': 37, 'latitude': 12.876178552385298, 'longitude': 80.08350805126592, 'login_time_of_day': 'morning', 'timestamp': '2025-04-22T04:36:41.046Z'}
+2025-04-22 10:06:56,052 - __main__ - INFO - Static model predictions - RF: 1.0 (0.980), XGB: 1 (0.995), Ensemble: 1 (0.986)
+2025-04-22 10:06:56,053 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-22 10:06:56,056 - __main__ - INFO - Saving online login model
+2025-04-22 10:06:56,666 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6903220627069473}
+2025-04-22 10:08:52,299 - __main__ - INFO - Loading existing login models
+2025-04-22 10:08:52,854 - __main__ - INFO - Loading existing online login model
+2025-04-22 10:08:53,442 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 14.181234574073633, 'cursor_movements': 171, 'session_duration': 83, 'keystroke_timings': [48, 45, 96, 56, 54, 54, 56, 56, 53, 53, 45, 16488, 522, 58, 45, 41, 46, 49, 39, 44, 39, 43, 61, 51, 27, 27, 22, 19, 18, 19, 17, 23, 21, 17, 20, 23, 3267, 267, 264, 950, 553, 1362, 521, 567, 488, 454, 703, 406, 1054, 2206, 1015, 835, 1425, 459, 506, 1547, 229, 518, 209, 626, 254, 2911, 223, 1941, 767, 517, 461, 417, 2597, 3771, 55, 97, 148, 2265, 181, 109, 170, 143, 2175, 1663, 131, 3423], 'key_press_count': 82, 'latitude': 12.876201617100374, 'longitude': 80.083542, 'login_time_of_day': 'morning', 'timestamp': '2025-04-22T04:38:37.862Z'}
+2025-04-22 10:08:53,511 - __main__ - INFO - Static model predictions - RF: 1.0 (0.980), XGB: 1 (0.995), Ensemble: 1 (0.986)
+2025-04-22 10:08:53,516 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-22 10:08:53,519 - __main__ - INFO - Saving online login model
+2025-04-22 10:08:54,306 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6903220627069473}
+2025-04-22 10:12:17,581 - __main__ - INFO - Loading existing login models
+2025-04-22 10:12:17,883 - __main__ - INFO - Loading existing online login model
+2025-04-22 10:12:18,347 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 3.010471892016352, 'cursor_movements': 2770, 'session_duration': 127, 'keystroke_timings': [220, 12758, 185, 240, 231, 211, 259, 237, 383, 828, 156, 13736, 722, 281, 174, 157, 304, 284, 438, 758, 627, 1837, 1056, 26393, 338, 472, 387, 218, 261, 277, 445, 734, 263], 'key_press_count': 33, 'latitude': 12.8863, 'longitude': 80.1427, 'login_time_of_day': 'morning', 'timestamp': '2025-04-22T04:42:04.771Z'}
+2025-04-22 10:12:18,449 - __main__ - INFO - Static model predictions - RF: 1.0 (0.980), XGB: 1 (0.995), Ensemble: 1 (0.986)
+2025-04-22 10:12:18,450 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-22 10:12:18,453 - __main__ - INFO - Saving online login model
+2025-04-22 10:12:19,091 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6903220627069473}
+2025-04-22 10:18:45,101 - __main__ - INFO - Loading existing login models
+2025-04-22 10:18:45,334 - __main__ - INFO - Loading existing online login model
+2025-04-22 10:18:45,839 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 4.521204400801538, 'cursor_movements': 68, 'session_duration': 24, 'keystroke_timings': [187, 193, 186, 223, 180, 227, 195, 210, 200, 411, 166, 2384, 609, 560, 166, 275, 158, 149, 185, 214, 195, 456, 214, 2118, 156, 187, 116, 214, 109, 161, 192, 153, 348, 195, 196, 292, 512, 182, 181, 184, 500, 608, 237, 861], 'key_press_count': 44, 'latitude': 12.8863, 'longitude': 80.1427, 'login_time_of_day': 'morning', 'timestamp': '2025-04-22T04:48:30.968Z'}
+2025-04-22 10:18:45,896 - __main__ - INFO - Static model predictions - RF: 1.0 (0.960), XGB: 1 (0.995), Ensemble: 1 (0.974)
+2025-04-22 10:18:45,897 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-22 10:18:45,901 - __main__ - INFO - Saving online login model
+2025-04-22 10:18:46,504 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6819220627069472}
+2025-04-22 10:22:26,595 - __main__ - INFO - Loading existing login models
+2025-04-22 10:22:26,822 - __main__ - INFO - Loading existing online login model
+2025-04-22 10:22:27,401 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 4.691530745680522, 'cursor_movements': 61, 'session_duration': 13, 'keystroke_timings': [214, 225, 217, 217, 191, 218, 218, 267, 174, 188, 213, 1788, 215, 279, 154, 148, 165, 195, 268, 387, 198, 2590, 171, 179, 116, 211, 145, 130, 195, 250, 294, 447, 164, 493], 'key_press_count': 34, 'latitude': 12.876183012286806, 'longitude': 80.08349843445995, 'login_time_of_day': 'morning', 'timestamp': '2025-04-22T04:52:12.043Z'}
+2025-04-22 10:22:27,470 - __main__ - INFO - Static model predictions - RF: 1.0 (0.980), XGB: 1 (0.995), Ensemble: 1 (0.986)
+2025-04-22 10:22:27,471 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-22 10:22:27,473 - __main__ - INFO - Saving online login model
+2025-04-22 10:22:28,244 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6903220627069473}
+2025-04-23 12:40:02,533 - __main__ - INFO - Loading existing login models
+2025-04-23 12:40:02,737 - __main__ - INFO - Loading existing online login model
+2025-04-23 12:40:03,086 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 5.504180380121911, 'cursor_movements': 118, 'session_duration': 72, 'keystroke_timings': [196, 185, 202, 324, 320, 148, 126, 105, 108, 866, 121, 2428, 98, 521, 137, 113, 191, 218, 736, 286, 219, 643, 99, 1827, 175, 211, 87, 221, 103, 188, 174, 137, 355, 444, 120], 'key_press_count': 35, 'latitude': 12.876205233861903, 'longitude': 80.08348285779691, 'login_time_of_day': 'afternoon', 'timestamp': '2025-04-23T07:09:50.834Z'}
+2025-04-23 12:40:03,128 - __main__ - INFO - Static model predictions - RF: 1.0 (0.720), XGB: 1 (0.995), Ensemble: 1 (0.830)
+2025-04-23 12:40:03,128 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-23 12:40:03,130 - __main__ - INFO - Saving online login model
+2025-04-23 12:40:03,582 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.5811220627069472}
+2025-04-23 12:52:20,256 - __main__ - INFO - Loading existing login models
+2025-04-23 12:52:20,524 - __main__ - INFO - Loading existing online login model
+2025-04-23 12:52:20,900 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 4.802770648638626, 'cursor_movements': 194, 'session_duration': 25, 'keystroke_timings': [196, 186, 183, 192, 182, 216, 196, 257, 175, 199, 183, 2139, 120, 213, 150, 123, 184, 238, 186, 535, 380, 2017, 198, 193, 116, 244, 170, 132, 204, 184, 759, 423, 158, 567], 'key_press_count': 34, 'latitude': 12.876193894134849, 'longitude': 80.08349442211149, 'login_time_of_day': 'afternoon', 'timestamp': '2025-04-23T07:22:11.954Z'}
+2025-04-23 12:52:20,950 - __main__ - INFO - Static model predictions - RF: 1.0 (0.790), XGB: 1 (0.995), Ensemble: 1 (0.872)
+2025-04-23 12:52:20,950 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-23 12:52:20,952 - __main__ - INFO - Saving online login model
+2025-04-23 12:52:21,613 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6105220627069473}
+2025-04-23 12:54:00,460 - __main__ - INFO - Loading existing login models
+2025-04-23 12:54:00,782 - __main__ - INFO - Loading existing online login model
+2025-04-23 12:54:01,266 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 5.891248874424626, 'cursor_movements': 208, 'session_duration': 19, 'keystroke_timings': [173, 166, 186, 148, 121, 132, 104, 82, 88, 1289, 186, 2836, 170, 206, 146, 104, 181, 222, 188, 276, 212, 1762, 209, 174, 99, 253, 391, 110, 179, 94, 598, 226, 115, 468], 'key_press_count': 34, 'latitude': 12.876204442875773, 'longitude': 80.08348531622477, 'login_time_of_day': 'afternoon', 'timestamp': '2025-04-23T07:23:53.342Z'}
+2025-04-23 12:54:01,344 - __main__ - INFO - Static model predictions - RF: 1.0 (0.850), XGB: 1 (0.995), Ensemble: 1 (0.908)
+2025-04-23 12:54:01,349 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-23 12:54:01,352 - __main__ - INFO - Saving online login model
+2025-04-23 12:54:02,028 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6357220627069473}
+2025-04-23 14:33:11,007 - __main__ - INFO - Loading existing login models
+2025-04-23 14:33:11,139 - __main__ - INFO - Loading existing online login model
+2025-04-23 14:33:11,440 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': 'e49064d2-2502-49ab-b687-072e49e03c5f', 'account_id': '789012123456', 'typing_speed': 1.6813143149904135, 'cursor_movements': 238, 'session_duration': 50, 'keystroke_timings': [329, 7418, 482, 7858, 330], 'key_press_count': 5, 'latitude': 12.876214242324863, 'longitude': 80.083515152298, 'login_time_of_day': 'afternoon', 'timestamp': '2025-04-23T09:03:03.454Z'}
+2025-04-23 14:33:11,473 - __main__ - INFO - Static model predictions - RF: 1.0 (0.790), XGB: 1 (0.995), Ensemble: 1 (0.872)
+2025-04-23 14:33:11,474 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-23 14:33:11,475 - __main__ - INFO - Saving online login model
+2025-04-23 14:33:11,849 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6105220627069473}
+2025-04-23 14:34:27,445 - __main__ - INFO - Loading existing login models
+2025-04-23 14:34:27,699 - __main__ - INFO - Loading existing online login model
+2025-04-23 14:34:28,008 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': 'e49064d2-2502-49ab-b687-072e49e03c5f', 'account_id': '789012123456', 'typing_speed': 3.9798553956700027, 'cursor_movements': 218, 'session_duration': 26, 'keystroke_timings': [291, 8488, 334, 6863, 195, 221, 200, 349, 193, 110, 406, 197, 175], 'key_press_count': 13, 'latitude': 12.876218376124443, 'longitude': 80.08352067015498, 'login_time_of_day': 'afternoon', 'timestamp': '2025-04-23T09:04:21.530Z'}
+2025-04-23 14:34:28,422 - __main__ - INFO - Static model predictions - RF: 1.0 (0.790), XGB: 1 (0.995), Ensemble: 1 (0.872)
+2025-04-23 14:34:28,422 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-23 14:34:28,424 - __main__ - INFO - Saving online login model
+2025-04-23 14:34:28,849 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6105220627069473}
+2025-04-23 14:43:21,869 - __main__ - INFO - Loading existing login models
+2025-04-23 14:43:22,089 - __main__ - INFO - Loading existing online login model
+2025-04-23 14:43:22,424 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 5.150898961141364, 'cursor_movements': 107, 'session_duration': 17, 'keystroke_timings': [197, 183, 211, 199, 199, 124, 105, 99, 104, 1227, 160, 3350, 135, 189, 124, 133, 531, 249, 243, 304, 223, 1953, 773, 283, 198, 237, 109, 226, 153, 213, 151, 271, 174, 215, 134, 571], 'key_press_count': 36, 'latitude': 12.87621206197225, 'longitude': 80.0835065426882, 'login_time_of_day': 'afternoon', 'timestamp': '2025-04-23T09:13:12.415Z'}
+2025-04-23 14:43:22,465 - __main__ - INFO - Static model predictions - RF: 1.0 (0.810), XGB: 1 (0.995), Ensemble: 1 (0.884)
+2025-04-23 14:43:22,465 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-23 14:43:22,468 - __main__ - INFO - Saving online login model
+2025-04-23 14:43:22,936 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6189220627069473}
+2025-04-23 14:52:34,900 - __main__ - INFO - Loading existing login models
+2025-04-23 14:52:35,106 - __main__ - INFO - Loading existing online login model
+2025-04-23 14:52:35,438 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 4.421024245960684, 'cursor_movements': 81, 'session_duration': 20, 'keystroke_timings': [189, 191, 287, 413, 224, 154, 143, 115, 109, 937, 175, 2653, 238, 315, 173, 581, 263, 209, 198, 307, 179, 3352, 574, 311, 172, 214, 136, 357, 159, 197, 176, 264, 254, 389, 135, 575], 'key_press_count': 36, 'latitude': 12.876186834753552, 'longitude': 80.0834914920024, 'login_time_of_day': 'afternoon', 'timestamp': '2025-04-23T09:22:27.031Z'}
+2025-04-23 14:52:35,474 - __main__ - INFO - Static model predictions - RF: 1.0 (0.810), XGB: 1 (0.995), Ensemble: 1 (0.884)
+2025-04-23 14:52:35,475 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-23 14:52:35,476 - __main__ - INFO - Saving online login model
+2025-04-23 14:52:35,905 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6189220627069473}
+2025-04-23 15:08:00,699 - __main__ - INFO - Loading existing login models
+2025-04-23 15:08:00,817 - __main__ - INFO - Loading existing online login model
+2025-04-23 15:08:01,146 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 6.2867866372819785, 'cursor_movements': 127, 'session_duration': 110, 'keystroke_timings': [237, 83, 77, 66, 60, 78, 86, 72, 94, 615, 121, 2625, 791, 396, 138, 236, 157, 141, 271, 368, 213, 333, 158, 2020, 180, 1958, 177, 197, 143, 244, 199, 156, 164, 156, 492, 212, 113, 672], 'key_press_count': 38, 'latitude': 12.876216584448407, 'longitude': 80.08353078846179, 'login_time_of_day': 'afternoon', 'timestamp': '2025-04-23T09:37:53.486Z'}
+2025-04-23 15:08:01,182 - __main__ - INFO - Static model predictions - RF: 1.0 (0.720), XGB: 1 (0.995), Ensemble: 1 (0.830)
+2025-04-23 15:08:01,183 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-23 15:08:01,184 - __main__ - INFO - Saving online login model
+2025-04-23 15:08:01,640 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.5811220627069472}
+2025-04-25 07:35:13,604 - __main__ - INFO - Loading existing login models
+2025-04-25 07:35:13,844 - __main__ - INFO - Loading existing online login model
+2025-04-25 07:35:14,191 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 5.301212831076436, 'cursor_movements': 241, 'session_duration': 62, 'keystroke_timings': [471, 91, 74, 85, 99, 99, 98, 102, 136, 939, 102, 3850, 325, 360, 155, 167, 553, 237, 234, 412, 675, 2305, 654, 97, 128, 82, 1069, 746, 171, 628, 258, 479, 2480, 791, 158], 'key_press_count': 35, 'latitude': 13.011889, 'longitude': 80.227332, 'login_time_of_day': 'morning', 'timestamp': '2025-04-25T02:05:11.716Z'}
+2025-04-25 07:35:14,203 - __main__ - INFO - Static model predictions - RF: 1.0 (0.980), XGB: 1 (0.995), Ensemble: 1 (0.986)
+2025-04-25 07:35:14,203 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-25 07:35:14,204 - __main__ - INFO - Saving online login model
+2025-04-25 07:35:14,388 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6903220627069473}
+2025-04-25 07:53:35,095 - __main__ - INFO - Loading existing login models
+2025-04-25 07:53:35,300 - __main__ - INFO - Loading existing online login model
+2025-04-25 07:53:35,613 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 10.165484373187848, 'cursor_movements': 59, 'session_duration': 27, 'keystroke_timings': [91, 46, 36, 40, 45, 50, 62, 90, 217, 601, 110, 2338, 247, 187, 144, 171, 180, 1515, 172, 189, 222, 202, 244, 3714, 290, 188, 143, 166, 760, 1224, 510, 31, 42, 23, 35, 33, 25, 41, 31, 31, 31, 563, 291, 227, 308, 193, 459, 255, 269, 276, 198, 2131, 708, 100, 143, 554, 429, 295, 302, 346, 1021, 298, 157, 838], 'key_press_count': 64, 'latitude': 12.970832, 'longitude': 80.150761, 'login_time_of_day': 'morning', 'timestamp': '2025-04-25T02:23:33.450Z'}
+2025-04-25 07:53:35,620 - __main__ - INFO - Static model predictions - RF: 1.0 (0.960), XGB: 1 (0.995), Ensemble: 1 (0.974)
+2025-04-25 07:53:35,621 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-25 07:53:35,622 - __main__ - INFO - Saving online login model
+2025-04-25 07:53:35,797 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6819220627069472}
+2025-04-25 07:54:52,811 - __main__ - INFO - Loading existing login models
+2025-04-25 07:54:53,008 - __main__ - INFO - Loading existing online login model
+2025-04-25 07:54:53,300 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 5.355022641273486, 'cursor_movements': 136, 'session_duration': 66, 'keystroke_timings': [103, 66, 62, 68, 85, 148, 174, 186, 140, 44993, 186, 1989, 659, 181, 153, 166, 1052, 741, 430, 219, 259, 277, 189, 2050, 514, 169, 132, 4978, 188, 215, 228, 352, 702, 73, 1344, 171, 157, 467], 'key_press_count': 38, 'latitude': 12.967442, 'longitude': 80.149109, 'login_time_of_day': 'morning', 'timestamp': '2025-04-25T02:24:51.093Z'}
+2025-04-25 07:54:53,308 - __main__ - INFO - Static model predictions - RF: 1.0 (0.960), XGB: 1 (0.995), Ensemble: 1 (0.974)
+2025-04-25 07:54:53,308 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-25 07:54:53,309 - __main__ - INFO - Saving online login model
+2025-04-25 07:54:53,464 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6819220627069472}
+2025-04-25 08:28:51,497 - __main__ - INFO - Loading existing login models
+2025-04-25 08:28:51,672 - __main__ - INFO - Loading existing online login model
+2025-04-25 08:28:51,973 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 7.1246241066270235, 'cursor_movements': 119, 'session_duration': 19, 'keystroke_timings': [88, 60, 49, 53, 53, 56, 70, 89, 131, 496, 94, 2782, 548, 615, 158, 181, 344, 366, 1780, 424, 219, 2222, 523, 53, 87, 792, 208, 202, 376, 403, 1226, 167, 143, 1083], 'key_press_count': 34, 'latitude': 12.876229557270843, 'longitude': 80.0840448917831, 'login_time_of_day': 'morning', 'timestamp': '2025-04-25T02:58:48.450Z'}
+2025-04-25 08:28:51,981 - __main__ - INFO - Static model predictions - RF: 1.0 (0.980), XGB: 1 (0.995), Ensemble: 1 (0.986)
+2025-04-25 08:28:51,989 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-25 08:28:51,989 - __main__ - INFO - Saving online login model
+2025-04-25 08:28:52,181 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6903220627069473}
+2025-04-25 08:29:38,989 - __main__ - INFO - Loading existing login models
+2025-04-25 08:29:39,139 - __main__ - INFO - Loading existing online login model
+2025-04-25 08:29:39,440 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 6.871481120602109, 'cursor_movements': 376, 'session_duration': 32, 'keystroke_timings': [45, 58, 44, 56, 60, 64, 69, 73, 78, 583, 131, 2733, 343, 197, 177, 177, 276, 1464, 236, 264, 469, 224, 2035, 410, 190, 1010, 184, 962, 110, 82, 836, 259, 833, 232, 424, 346, 477, 139, 215], 'key_press_count': 39, 'latitude': 12.876229557270843, 'longitude': 80.0840448917831, 'login_time_of_day': 'morning', 'timestamp': '2025-04-25T02:59:37.657Z'}
+2025-04-25 08:29:39,447 - __main__ - INFO - Static model predictions - RF: 1.0 (0.980), XGB: 1 (0.995), Ensemble: 1 (0.986)
+2025-04-25 08:29:39,447 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-25 08:29:39,447 - __main__ - INFO - Saving online login model
+2025-04-25 08:29:39,598 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6903220627069473}
+2025-04-25 08:32:00,420 - __main__ - INFO - Loading existing login models
+2025-04-25 08:32:00,563 - __main__ - INFO - Loading existing online login model
+2025-04-25 08:32:00,914 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 4.40170914120117, 'cursor_movements': 983, 'session_duration': 46, 'keystroke_timings': [222, 254, 170, 177, 217, 185, 223, 214, 223, 677, 220, 3184, 260, 166, 155, 163, 230, 228, 218, 244, 200, 1954, 506, 104, 78, 494, 204, 234, 264, 393, 875, 398, 3742, 5517, 79], 'key_press_count': 35, 'latitude': 12.9747, 'longitude': 79.9568, 'login_time_of_day': 'morning', 'timestamp': '2025-04-25T03:01:58.644Z'}
+2025-04-25 08:32:00,922 - __main__ - INFO - Static model predictions - RF: 1.0 (0.980), XGB: 1 (0.995), Ensemble: 1 (0.986)
+2025-04-25 08:32:00,922 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-25 08:32:00,923 - __main__ - INFO - Saving online login model
+2025-04-25 08:32:01,088 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6903220627069473}
+2025-04-25 08:32:19,919 - __main__ - INFO - Training new transaction models
+2025-04-25 08:32:19,920 - __main__ - INFO - Training initial transaction models
+2025-04-25 08:32:20,213 - __main__ - INFO - Initial transaction models trained and saved successfully
+2025-04-25 08:32:20,213 - __main__ - INFO - Creating new online transaction model
+2025-04-25 08:32:20,213 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 08:32:20,214 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 500, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 243, 'session_duration': 13, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T03:02:18.539Z'}
+2025-04-25 08:32:20,225 - __main__ - INFO - Static model predictions - RF: 0.0 (0.200), XGB: 0 (0.001), Ensemble: 0 (0.120)
+2025-04-25 08:32:20,225 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.12045399423106573}
+2025-04-25 08:35:35,712 - __main__ - INFO - Loading existing login models
+2025-04-25 08:35:35,946 - __main__ - INFO - Loading existing online login model
+2025-04-25 08:35:36,298 - __main__ - INFO - Starting login anomaly detection with features: {'user_id': '70ab2081-1b96-459c-96c3-16e50ce38486', 'account_id': '123456789012', 'typing_speed': 5.373224867404621, 'cursor_movements': 476, 'session_duration': 68, 'keystroke_timings': [185, 78, 70, 82, 100, 102, 94, 106, 157, 555, 170, 2318, 277, 177, 157, 154, 787, 271, 277, 237, 171, 1984, 434, 132, 142, 1381, 194, 209, 349, 662, 1270, 427, 140, 8124], 'key_press_count': 34, 'latitude': 12.9747, 'longitude': 79.9568, 'login_time_of_day': 'morning', 'timestamp': '2025-04-25T03:05:33.728Z'}
+2025-04-25 08:35:36,305 - __main__ - INFO - Static model predictions - RF: 1.0 (0.980), XGB: 1 (0.995), Ensemble: 1 (0.986)
+2025-04-25 08:35:36,305 - __main__ - INFO - Online model prediction: 0 (0.000)
+2025-04-25 08:35:36,306 - __main__ - INFO - Saving online login model
+2025-04-25 08:35:36,476 - __main__ - INFO - Login anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.6903220627069473}
+2025-04-25 08:49:37,624 - __main__ - INFO - Loading existing transaction models
+2025-04-25 08:49:37,823 - __main__ - INFO - Creating new online transaction model
+2025-04-25 08:49:37,823 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 08:49:37,824 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 500, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 653, 'session_duration': 818, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T03:19:35.825Z'}
+2025-04-25 08:49:37,834 - __main__ - INFO - Static model predictions - RF: 0.0 (0.240), XGB: 0 (0.001), Ensemble: 0 (0.144)
+2025-04-25 08:49:37,834 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.14445399423106572}
+2025-04-25 08:53:08,538 - __main__ - INFO - Loading existing transaction models
+2025-04-25 08:53:08,715 - __main__ - INFO - Creating new online transaction model
+2025-04-25 08:53:08,715 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 08:53:08,716 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 500, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 224, 'session_duration': 48, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T03:23:06.786Z'}
+2025-04-25 08:53:08,726 - __main__ - INFO - Static model predictions - RF: 0.0 (0.190), XGB: 0 (0.001), Ensemble: 0 (0.114)
+2025-04-25 08:53:08,726 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.11445399423106573}
+2025-04-25 08:53:37,774 - __main__ - INFO - Loading existing transaction models
+2025-04-25 08:53:37,902 - __main__ - INFO - Creating new online transaction model
+2025-04-25 08:53:37,903 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 08:53:37,903 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 500, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 418, 'session_duration': 78, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T03:23:36.384Z'}
+2025-04-25 08:53:37,914 - __main__ - INFO - Static model predictions - RF: 0.0 (0.190), XGB: 0 (0.001), Ensemble: 0 (0.114)
+2025-04-25 08:53:37,914 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.11445399423106573}
+2025-04-25 08:56:20,269 - __main__ - INFO - Loading existing transaction models
+2025-04-25 08:56:20,455 - __main__ - INFO - Creating new online transaction model
+2025-04-25 08:56:20,455 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 08:56:20,455 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 500, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 532, 'session_duration': 240, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T03:26:18.433Z'}
+2025-04-25 08:56:20,465 - __main__ - INFO - Static model predictions - RF: 0.0 (0.190), XGB: 0 (0.001), Ensemble: 0 (0.114)
+2025-04-25 08:56:20,465 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.11445399423106573}
+2025-04-25 08:58:44,879 - __main__ - INFO - Loading existing transaction models
+2025-04-25 08:58:45,076 - __main__ - INFO - Creating new online transaction model
+2025-04-25 08:58:45,076 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 08:58:45,077 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 500, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 614, 'session_duration': 384, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T03:28:43.212Z'}
+2025-04-25 08:58:45,087 - __main__ - INFO - Static model predictions - RF: 0.0 (0.190), XGB: 0 (0.001), Ensemble: 0 (0.114)
+2025-04-25 08:58:45,088 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.11445399423106573}
+2025-04-25 08:59:23,486 - __main__ - INFO - Loading existing transaction models
+2025-04-25 08:59:23,656 - __main__ - INFO - Creating new online transaction model
+2025-04-25 08:59:23,656 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 08:59:23,657 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 500, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 677, 'session_duration': 423, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T03:29:22.024Z'}
+2025-04-25 08:59:23,668 - __main__ - INFO - Static model predictions - RF: 0.0 (0.190), XGB: 0 (0.001), Ensemble: 0 (0.114)
+2025-04-25 08:59:23,669 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.11445399423106573}
+2025-04-25 08:59:41,654 - __main__ - INFO - Loading existing transaction models
+2025-04-25 08:59:41,846 - __main__ - INFO - Creating new online transaction model
+2025-04-25 08:59:41,846 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 08:59:41,846 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 500, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 765, 'session_duration': 442, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T03:29:40.106Z'}
+2025-04-25 08:59:41,856 - __main__ - INFO - Static model predictions - RF: 0.0 (0.190), XGB: 0 (0.001), Ensemble: 0 (0.114)
+2025-04-25 08:59:41,857 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.11445399423106573}
+2025-04-25 09:00:37,015 - __main__ - INFO - Loading existing transaction models
+2025-04-25 09:00:37,223 - __main__ - INFO - Creating new online transaction model
+2025-04-25 09:00:37,223 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 09:00:37,224 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 500, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 821, 'session_duration': 497, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T03:30:35.551Z'}
+2025-04-25 09:00:37,236 - __main__ - INFO - Static model predictions - RF: 0.0 (0.240), XGB: 0 (0.001), Ensemble: 0 (0.144)
+2025-04-25 09:00:37,236 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.14445399423106572}
+2025-04-25 09:02:24,375 - __main__ - INFO - Loading existing transaction models
+2025-04-25 09:02:24,559 - __main__ - INFO - Creating new online transaction model
+2025-04-25 09:02:24,559 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 09:02:24,560 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 500, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 1103, 'session_duration': 604, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T03:32:22.715Z'}
+2025-04-25 09:02:24,570 - __main__ - INFO - Static model predictions - RF: 0.0 (0.240), XGB: 0 (0.001), Ensemble: 0 (0.144)
+2025-04-25 09:02:24,570 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.14445399423106572}
+2025-04-25 09:03:39,678 - __main__ - INFO - Loading existing transaction models
+2025-04-25 09:03:39,884 - __main__ - INFO - Creating new online transaction model
+2025-04-25 09:03:39,885 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 09:03:39,886 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 500, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 1187, 'session_duration': 679, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T03:33:37.911Z'}
+2025-04-25 09:03:39,897 - __main__ - INFO - Static model predictions - RF: 0.0 (0.240), XGB: 0 (0.001), Ensemble: 0 (0.144)
+2025-04-25 09:03:39,897 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.14445399423106572}
+2025-04-25 09:08:56,617 - __main__ - INFO - Loading existing transaction models
+2025-04-25 09:08:56,821 - __main__ - INFO - Creating new online transaction model
+2025-04-25 09:08:56,821 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 09:08:56,822 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 500, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 316, 'session_duration': 30, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T03:38:54.837Z'}
+2025-04-25 09:08:56,832 - __main__ - INFO - Static model predictions - RF: 0.0 (0.190), XGB: 0 (0.001), Ensemble: 0 (0.114)
+2025-04-25 09:08:56,832 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': False, 'anomaly_type': None, 'score': 0.11445399423106573}
+2025-04-25 09:12:28,383 - __main__ - INFO - Loading existing transaction models
+2025-04-25 09:12:28,528 - __main__ - INFO - Creating new online transaction model
+2025-04-25 09:12:28,528 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 09:12:28,529 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 100000, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 671, 'session_duration': 36, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T03:42:26.327Z'}
+2025-04-25 09:12:28,539 - __main__ - INFO - Static model predictions - RF: 1.0 (0.560), XGB: 1 (0.995), Ensemble: 1 (0.734)
+2025-04-25 09:12:28,540 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': True, 'anomaly_type': 'Unusually large transaction amount', 'score': 0.7341743752956391}
+2025-04-25 09:15:26,586 - __main__ - INFO - Loading existing transaction models
+2025-04-25 09:15:26,718 - __main__ - INFO - Creating new online transaction model
+2025-04-25 09:15:26,718 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 09:15:26,719 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 100000, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 249, 'session_duration': 18, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T03:45:24.964Z'}
+2025-04-25 09:15:26,729 - __main__ - INFO - Static model predictions - RF: 1.0 (0.560), XGB: 1 (0.995), Ensemble: 1 (0.734)
+2025-04-25 09:15:26,729 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': True, 'anomaly_type': 'Unusually large transaction amount', 'score': 0.7341743752956391}
+2025-04-25 09:16:28,101 - __main__ - INFO - Loading existing transaction models
+2025-04-25 09:16:28,242 - __main__ - INFO - Creating new online transaction model
+2025-04-25 09:16:28,242 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 09:16:28,243 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 100000, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 218, 'session_duration': 13, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T03:46:26.738Z'}
+2025-04-25 09:16:28,252 - __main__ - INFO - Static model predictions - RF: 1.0 (0.570), XGB: 1 (0.995), Ensemble: 1 (0.740)
+2025-04-25 09:16:28,252 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': True, 'anomaly_type': 'Unusually large transaction amount', 'score': 0.740174375295639}
+2025-04-25 09:24:56,198 - __main__ - INFO - Loading existing transaction models
+2025-04-25 09:24:56,403 - __main__ - INFO - Creating new online transaction model
+2025-04-25 09:24:56,404 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 09:24:56,404 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 100000, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 408, 'session_duration': 39, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T03:54:54.274Z'}
+2025-04-25 09:24:56,415 - __main__ - INFO - Static model predictions - RF: 1.0 (0.560), XGB: 1 (0.995), Ensemble: 1 (0.734)
+2025-04-25 09:24:56,415 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': True, 'anomaly_type': 'Unusually large transaction amount \nAnomaly logged and staff alert created', 'score': 0.7341743752956391}
+2025-04-25 09:26:20,522 - __main__ - INFO - Loading existing transaction models
+2025-04-25 09:26:20,736 - __main__ - INFO - Creating new online transaction model
+2025-04-25 09:26:20,737 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 09:26:20,737 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 100000, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 392, 'session_duration': 61, 'latitude': 12.87622739528673, 'longitude': 80.08404710630346, 'timestamp': '2025-04-25T03:56:19.011Z'}
+2025-04-25 09:26:20,748 - __main__ - INFO - Static model predictions - RF: 1.0 (0.560), XGB: 1 (0.995), Ensemble: 1 (0.734)
+2025-04-25 09:26:20,748 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': True, 'anomaly_type': 'Unusually large transaction amount!! \nAnomaly logged and staff alert created', 'score': 0.7341743752956391}
+2025-04-25 09:31:51,790 - __main__ - INFO - Loading existing transaction models
+2025-04-25 09:31:51,957 - __main__ - INFO - Creating new online transaction model
+2025-04-25 09:31:51,957 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 09:31:51,958 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 100000, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 307, 'session_duration': 19, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T04:01:49.996Z'}
+2025-04-25 09:31:51,968 - __main__ - INFO - Static model predictions - RF: 1.0 (0.560), XGB: 1 (0.995), Ensemble: 1 (0.734)
+2025-04-25 09:31:51,968 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': True, 'anomaly_type': 'Unusually large transaction amount!! \nAnomaly logged and staff alert created', 'score': 0.7341743752956391}
+2025-04-25 09:32:41,879 - __main__ - INFO - Loading existing transaction models
+2025-04-25 09:32:42,051 - __main__ - INFO - Creating new online transaction model
+2025-04-25 09:32:42,051 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 09:32:42,052 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 100000, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 99, 'session_duration': 11, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T04:02:40.368Z'}
+2025-04-25 09:32:42,063 - __main__ - INFO - Static model predictions - RF: 1.0 (0.550), XGB: 1 (0.995), Ensemble: 1 (0.728)
+2025-04-25 09:32:42,063 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': True, 'anomaly_type': 'Unusually large transaction amount!! \nAnomaly logged and staff alert created', 'score': 0.7281743752956391}
+2025-04-25 09:36:28,785 - __main__ - INFO - Loading existing transaction models
+2025-04-25 09:36:28,935 - __main__ - INFO - Creating new online transaction model
+2025-04-25 09:36:28,935 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 09:36:28,936 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 100000, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 474, 'session_duration': 18, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T04:06:26.867Z'}
+2025-04-25 09:36:28,946 - __main__ - INFO - Static model predictions - RF: 1.0 (0.560), XGB: 1 (0.995), Ensemble: 1 (0.734)
+2025-04-25 09:36:28,946 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': True, 'anomaly_type': 'Unusually large transaction amount!! \nAnomaly logged and staff alert created', 'score': 0.7341743752956391}
+2025-04-25 09:45:13,561 - __main__ - INFO - Loading existing transaction models
+2025-04-25 09:45:13,776 - __main__ - INFO - Creating new online transaction model
+2025-04-25 09:45:13,776 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 09:45:13,777 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 100000, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 150, 'session_duration': 12, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T04:15:11.691Z'}
+2025-04-25 09:45:13,787 - __main__ - INFO - Static model predictions - RF: 1.0 (0.570), XGB: 1 (0.995), Ensemble: 1 (0.740)
+2025-04-25 09:45:13,787 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': True, 'anomaly_type': 'Unusually large transaction amount!! \nAnomaly logged and staff alert created', 'score': 0.740174375295639}
+2025-04-25 09:46:43,395 - __main__ - INFO - Loading existing transaction models
+2025-04-25 09:46:43,530 - __main__ - INFO - Creating new online transaction model
+2025-04-25 09:46:43,530 - __main__ - ERROR - Error creating online transaction model: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+Traceback (most recent call last):
+  File "D:\Peter\Clg\IobHack\anomaly_annihilators\python\anomaly_detection_model.py", line 205, in _load_or_create_online_model
+    return preprocessing.StandardScaler() | ensemble.AdaptiveRandomForestClassifier(
+AttributeError: module 'river.ensemble' has no attribute 'AdaptiveRandomForestClassifier'
+2025-04-25 09:46:43,530 - __main__ - INFO - Starting transaction anomaly detection with features: {'from_account_id': '123456789012', 'to_account_id': '123456789012', 'transaction_amount': 100000, 'to_balance': 0, 'transaction_frequency': 0, 'cursor_movements': 189, 'session_duration': 51, 'latitude': 12.9747, 'longitude': 79.9568, 'timestamp': '2025-04-25T04:16:41.784Z'}
+2025-04-25 09:46:43,541 - __main__ - INFO - Static model predictions - RF: 1.0 (0.560), XGB: 1 (0.995), Ensemble: 1 (0.734)
+2025-04-25 09:46:43,541 - __main__ - INFO - Transaction anomaly detection result: {'is_anomalous': True, 'anomaly_type': 'Unusually large transaction amount!! \nAnomaly logged and staff alert created', 'score': 0.7341743752956391}

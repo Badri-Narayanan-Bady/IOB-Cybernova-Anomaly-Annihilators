@@ -1,0 +1,239 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0066cc;
+  --primary-light: #4d94ff;
+  --primary-dark: #004c99;
+  --primary-gradient-start: #0066cc;
+  --primary-gradient-end: #0099ff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --info: #17a2b8;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --background: #f0f7ff;
+  --card-bg: #ffffff;
+}
+
+body {
+  background-color: var(--background);
+  color: #333;
+}
+
+/* Bootstrap overrides */
+.btn-primary {
+  background: linear-gradient(to right, var(--primary-gradient-start), var(--primary-gradient-end)) !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 4px 6px rgba(0, 102, 204, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background: linear-gradient(to right, var(--primary-dark), var(--primary)) !important;
+  border-color: var(--primary-dark) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 102, 204, 0.3);
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 102, 204, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 102, 204, 0.15);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 0.25rem rgba(0, 102, 204, 0.25);
+}
+
+.nav-link {
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Custom styles */
+.security-scanner-container {
+  border-left: 4px solid var(--primary);
+}
+
+.step-label {
+  transition: all 0.3s ease;
+}
+
+.scanner-icon,
+.success-icon,
+.alert-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Phone input customization */
+.react-tel-input .form-control {
+  width: 100% !important;
+  height: calc(1.5em + 0.75rem + 2px) !important;
+  padding: 0.375rem 0.75rem !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  border-radius: 8px !important;
+}
+
+.react-tel-input .form-control:focus {
+  border-color: var(--primary-light) !important;
+  box-shadow: 0 0 0 0.25rem rgba(0, 102, 204, 0.25) !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Gradient backgrounds */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-end));
+}
+
+.text-gradient {
+  background: linear-gradient(to right, var(--primary-gradient-start), var(--primary-gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Card styles */
+.feature-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-top: 4px solid var(--primary);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 102, 204, 0.2);
+}
+
+/* Button styles */
+.btn-floating {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.btn-floating:hover {
+  transform: translateY(-5px) rotate(5deg);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo styles */
+.iob-logo {
+  max-height: 80px;
+  transition: all 0.3s ease;
+}
+
+.iob-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Dashboard card styles */
+.dashboard-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--primary);
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 102, 204, 0.2);
+}
+
+/* Progress bar styles */
+.progress {
+  height: 8px;
+  border-radius: 4px;
+  background-color: #e9ecef;
+}
+
+.progress-bar {
+  background: linear-gradient(to right, var(--primary-gradient-start), var(--primary-gradient-end));
+}

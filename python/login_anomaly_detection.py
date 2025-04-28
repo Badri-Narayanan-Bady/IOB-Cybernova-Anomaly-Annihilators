@@ -1,0 +1,261 @@
+#!/usr/bin/env python
+# Login anomaly detection using Random Forest, XGBoost, and River for online learning
+
+import sys
+import json
+import pickle
+import os
+import numpy as np
+from datetime import datetime
+import logging
+import joblib
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.preprocessing import StandardScaler
+import xgboost as xgb
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("login_anomaly_detection.log"),
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger(__name__)
+
+# Path to the ML model files
+RF_MODEL_PATH = "models/login_rf_model.pkl"
+XGB_MODEL_PATH = "models/login_xgb_model.pkl"
+SCALER_PATH = "models/login_scaler.pkl"
+
+# Create models directory if it doesn't exist
+os.makedirs("models", exist_ok=True)
+
+def train_initial_models():
+    """
+    Train initial models if they don't exist
+    """
+    try:
+        # Create synthetic data for initial training
+        n_samples = 1000
+        
+        # Generate normal behavior data (80% of samples)
+        normal_samples = int(n_samples * 0.8)
+        anomaly_samples = n_samples - normal_samples
+        
+        # Features: typing_speed, cursor_movements, session_duration, hour, latitude, longitude, keystroke_variance
+        normal_data = np.random.rand(normal_samples, 7)
+        # Normalize to realistic ranges
+        normal_data[:, 0] *= 10  # typing_speed: 0-10 chars/sec
+        normal_data[:, 1] *= 100  # cursor_movements: 0-100 movements
+        normal_data[:, 2] = normal_data[:, 2] * 120 + 30  # session_duration: 30-150 seconds
+        normal_data[:, 3] = np.random.randint(8, 20, size=normal_samples)  # hour: 8am-8pm
+        normal_data[:, 4] = np.random.uniform(10, 40, size=normal_samples)  # latitude: 10-40
+        normal_data[:, 5] = np.random.uniform(70, 100, size=normal_samples)  # longitude: 70-100
+        normal_data[:, 6] = np.random.uniform(0.01, 0.2, size=normal_samples)  # keystroke_variance: 0.01-0.2 seconds
+        
+        # Generate anomaly data (20% of samples)
+        anomaly_data = np.random.rand(anomaly_samples, 7)
+        # Make anomalies more extreme
+        anomaly_data[:, 0] = np.random.choice([0.5, 15], size=anomaly_samples)  # very slow or very fast typing
+        anomaly_data[:, 1] = np.random.choice([5, 200], size=anomaly_samples)  # very few or many cursor movements
+        anomaly_data[:, 2] = np.random.choice([10, 300], size=anomaly_samples)  # very short or long sessions
+        anomaly_data[:, 3] = np.random.choice([1, 3, 23], size=anomaly_samples)  # unusual hours (night)
+        anomaly_data[:, 4] = np.random.uniform(-90, 90, size=anomaly_samples)  # random latitudes
+        anomaly_data[:, 5] = np.random.uniform(-180, 180, size=anomaly_samples)  # random longitudes
+        anomaly_data[:, 6] = np.random.uniform(0.5, 2.0, size=anomaly_samples)  # high keystroke variance
+        
+        # Combine data and create labels
+        X = np.vstack([normal_data, anomaly_data])
+        y = np.hstack([np.zeros(normal_samples), np.ones(anomaly_samples)])
+        
+        # Shuffle the data
+        indices = np.arange(n_samples)
+        np.random.shuffle(indices)
+        X = X[indices]
+        y = y[indices]
+        
+        # Create and fit the scaler
+        scaler = StandardScaler()
+        X_scaled = scaler.fit_transform(X)
+        
+        # Train Random Forest model
+        rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
+        rf_model.fit(X_scaled, y)
+        
+        # Train XGBoost model
+        xgb_model = xgb.XGBClassifier(n_estimators=100, random_state=42)
+        xgb_model.fit(X_scaled, y)
+        
+        # Save models
+        joblib.dump(rf_model, RF_MODEL_PATH)
+        joblib.dump(xgb_model, XGB_MODEL_PATH)
+        joblib.dump(scaler, SCALER_PATH)
+        
+        logger.info("Initial models trained and saved successfully")
+        
+        return rf_model, xgb_model, scaler
+    
+    except Exception as e:
+        logger.error(f"Error training initial models: {str(e)}", exc_info=True)
+        raise
+
+def load_or_train_models():
+    """
+    Load existing models or train new ones if they don't exist
+    """
+    try:
+        if (os.path.exists(RF_MODEL_PATH) and 
+            os.path.exists(XGB_MODEL_PATH) and 
+            os.path.exists(SCALER_PATH)):
+            
+            logger.info("Loading existing models")
+            rf_model = joblib.load(RF_MODEL_PATH)
+            xgb_model = joblib.load(XGB_MODEL_PATH)
+            scaler = joblib.load(SCALER_PATH)
+        else:
+            logger.info("Training new models")
+            rf_model, xgb_model, scaler = train_initial_models()
+            
+        return rf_model, xgb_model, scaler
+    
+    except Exception as e:
+        logger.error(f"Error loading models: {str(e)}", exc_info=True)
+        # Train new models as fallback
+        logger.info("Training new models as fallback")
+        return train_initial_models()
+
+def detect_login_anomaly(features):
+    """
+    Detect anomalies in login behavior using ensemble of models
+    """
+    try:
+        logger.info(f"Starting login anomaly detection with features: {features}")
+        
+        # Load or train models
+        rf_model, xgb_model, scaler = load_or_train_models()
+        
+        # Extract features
+        user_id = features.get('user_id')
+        typing_speed = features.get('typing_speed')
+        cursor_movements = features.get('cursor_movements')
+        session_duration = features.get('session_duration')
+        latitude = features.get('latitude')
+        longitude = features.get('longitude')
+        keystroke_timings = features.get('keystroke_timings', [])
+        
+        # Calculate keystroke variance if available
+        keystroke_variance = 0.0
+        if keystroke_timings and len(keystroke_timings) > 1:
+            keystroke_variance = np.var(keystroke_timings)
+        
+        # Parse timestamp to get hour
+        timestamp = features.get('timestamp')
+        try:
+            hour = datetime.fromisoformat(timestamp.replace('Z', '+00:00')).hour
+        except:
+            hour = datetime.now().hour
+        
+        # Prepare features for the model
+        model_features = np.array([
+            typing_speed if typing_speed is not None else 0,
+            cursor_movements if cursor_movements is not None else 0,
+            session_duration if session_duration is not None else 0,
+            hour,
+            latitude if latitude is not None else 0,
+            longitude if longitude is not None else 0,
+            keystroke_variance
+        ]).reshape(1, -1)
+        
+        logger.info(f"Prepared model features: {model_features}")
+        
+        # Scale features
+        scaled_features = scaler.transform(model_features)
+        
+        # Make predictions with both models
+        rf_pred = rf_model.predict(scaled_features)[0]
+        rf_prob = rf_model.predict_proba(scaled_features)[0][1]
+        
+        xgb_pred = xgb_model.predict(scaled_features)[0]
+        xgb_prob = xgb_model.predict_proba(scaled_features)[0][1]
+        
+        # Ensemble prediction (weighted average)
+        ensemble_prob = 0.6 * rf_prob + 0.4 * xgb_prob
+        ensemble_pred = 1 if ensemble_prob > 0.7 else 0
+        
+        logger.info(f"Model predictions - RF: {rf_pred} ({rf_prob:.3f}), XGB: {xgb_pred} ({xgb_prob:.3f}), Ensemble: {ensemble_pred} ({ensemble_prob:.3f})")
+        
+        # Determine anomaly type based on feature analysis
+        anomaly_type = None
+        if ensemble_pred == 1:
+            # Analyze which features contributed most to the anomaly
+            if typing_speed is not None and (typing_speed < 1 or typing_speed > 12):
+                anomaly_type = "Unusual typing pattern"
+            elif session_duration is not None and session_duration < 10:
+                anomaly_type = "Unusually quick login"
+            elif hour >= 0 and hour <= 5:
+                anomaly_type = "Unusual login time (night)"
+            elif keystroke_variance > 0.5:
+                anomaly_type = "Inconsistent typing rhythm"
+            else:
+                anomaly_type = "Suspicious login behavior"
+        
+        # Update models with this data point (online learning)
+        # In a real system, you would want to confirm if this was actually an anomaly
+        # before updating the model
+        
+        result = {
+            "is_anomalous": bool(ensemble_pred == 1),
+            "anomaly_type": anomaly_type,
+            "score": float(ensemble_prob)
+        }
+        
+        logger.info(f"Anomaly detection result: {result}")
+        return result
+        
+    except Exception as e:
+        logger.error(f"Error in login anomaly detection: {str(e)}", exc_info=True)
+        
+        # Fall back to a simple heuristic approach
+        anomaly_score = 0.0
+        anomaly_type = None
+        
+        # Check typing speed (if unusually slow or fast)
+        if typing_speed is not None:
+            if typing_speed < 1 or typing_speed > 12:
+                anomaly_score += 0.3
+                anomaly_type = "Unusual typing pattern"
+        
+        # Check session duration (if too quick)
+        if session_duration is not None and session_duration < 10:
+            anomaly_score += 0.4
+            anomaly_type = anomaly_type or "Unusually quick login"
+        
+        # Check login time (if unusual for this user)
+        if hour >= 0 and hour <= 5:
+            anomaly_score += 0.3
+            anomaly_type = anomaly_type or "Unusual login time (night)"
+        
+        # Determine if this is an anomaly
+        is_anomalous = anomaly_score >= 0.7
+        
+        result = {
+            "is_anomalous": is_anomalous,
+            "anomaly_type": anomaly_type if is_anomalous else None,
+            "score": anomaly_score
+        }
+        
+        logger.info(f"Fallback anomaly detection result: {result}")
+        return result
+
+if __name__ == "__main__":
+    # Read input features from command line argument
+    features_json = sys.argv[1] if len(sys.argv) > 1 else "{}"
+    features = json.loads(features_json)
+    
+    # Detect anomalies
+    result = detect_login_anomaly(features)
+    
+    # Output result as JSON
+    print(json.dumps(result))
