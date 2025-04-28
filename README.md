@@ -152,12 +152,9 @@ The system uses a combination of:
 - Rate limiting is implemented to prevent brute force attacks
 - Anomaly detection provides an additional layer of security
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 \`\`\`
 
-Let's also create a comprehensive Android app for the IOB Authenticator:
+Comprehensive Android app for the IOB Authenticator (in development):
 
 ```java file="android/IOBAuthenticator/app/src/main/java/com/iob/authenticator/MainActivity.java"
 package com.iob.authenticator;
